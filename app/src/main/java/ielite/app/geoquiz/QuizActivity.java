@@ -5,7 +5,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,8 +18,11 @@ import android.widget.Toast;
 
 public class QuizActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
     private static final String TAG = "QuizActivity";
 
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
     private Button mTrueButton;
     private Button mFalseButton;
     private Button mNextButton;
@@ -37,7 +43,10 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         Log.d(TAG, "onCreate(Bundle) called");
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
         setContentView(R.layout.activity_quiz);
 
         //get a reference to the text view and set its text to the question
@@ -100,6 +109,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     @Override
+<<<<<<< HEAD
     public void onStart(){
         super.onStart();
         Log.d(TAG, "OnStart() Called");
@@ -128,6 +138,8 @@ public class QuizActivity extends AppCompatActivity {
 
 
     @Override
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_quiz, menu);
