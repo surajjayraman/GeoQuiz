@@ -5,7 +5,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+<<<<<<< HEAD
+import android.util.Log;
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,9 +22,17 @@ import android.widget.Toast;
 
 public class QuizActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
     private static final String TAG = "QuizActivity";
     private static final String KEY_INDEX = "index";
 
+=======
+<<<<<<< HEAD
+    private static final String TAG = "QuizActivity";
+
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
     private Button mTrueButton;
     private Button mFalseButton;
     private Button mNextButton;
@@ -38,16 +53,26 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         Log.d(TAG, "onCreate(Bundle) called");
+=======
+<<<<<<< HEAD
+        Log.d(TAG, "onCreate(Bundle) called");
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
         setContentView(R.layout.activity_quiz);
 
         //get a reference to the text view and set its text to the question
         //at the current index
         mQuestionTextView = (TextView)findViewById(R.id.question_text_view);
+<<<<<<< HEAD
 
         if(savedInstanceState != null){
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX,0);
         }
+=======
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
         updateQuestion();
 
         //Getting references to Button Widgets
@@ -105,6 +130,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     @Override
+<<<<<<< HEAD
     public void onSaveInstanceState(Bundle savedInstanceState){
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "onSaveInstanceState");
@@ -113,6 +139,9 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     @Override
+=======
+<<<<<<< HEAD
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
     public void onStart(){
         super.onStart();
         Log.d(TAG, "OnStart() Called");
@@ -141,6 +170,11 @@ public class QuizActivity extends AppCompatActivity {
 
 
     @Override
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_quiz, menu);
