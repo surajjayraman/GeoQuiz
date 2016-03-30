@@ -30,12 +30,15 @@
 
     </LinearLayout>
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/cheat_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cheat_button"/>
 
+=======
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
