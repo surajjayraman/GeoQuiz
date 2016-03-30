@@ -30,12 +30,21 @@
 
     </LinearLayout>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     <Button
         android:id="@+id/cheat_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cheat_button"/>
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

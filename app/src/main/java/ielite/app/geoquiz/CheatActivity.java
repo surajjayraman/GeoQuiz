@@ -1,17 +1,25 @@
 package ielite.app.geoquiz;
 
+<<<<<<< HEAD
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+=======
+import android.content.Context;
+import android.content.Intent;
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+<<<<<<< HEAD
 import android.view.ViewAnimationUtils;
+=======
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -22,6 +30,7 @@ public class CheatActivity extends AppCompatActivity {
     private TextView mAnswerTextView;
     private Button mShowAnswer;
 
+<<<<<<< HEAD
     public static Intent newIntent(Context packageContext, boolean answerIsTrue) {
         Intent i = new Intent(packageContext, CheatActivity.class);
         i.putExtra(EXTRA_ANSWER_IS_TRUE, answerIsTrue);
@@ -31,6 +40,8 @@ public class CheatActivity extends AppCompatActivity {
     public static boolean wasAnswerShown(Intent result) {
         return result.getBooleanExtra(EXTRA_ANSWER_SHOWN, false);
     }
+=======
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +64,7 @@ public class CheatActivity extends AppCompatActivity {
                     mAnswerTextView.setText(R.string.false_button);
                 }
                 setAnswerShownResult(true);
+<<<<<<< HEAD
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     int cx = mShowAnswer.getWidth() / 2;
                     int cy = mShowAnswer.getHeight() / 2;
@@ -73,6 +85,8 @@ public class CheatActivity extends AppCompatActivity {
                     mShowAnswer.setVisibility(View.INVISIBLE);
                 }
 
+=======
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
             }
         });
 
@@ -90,9 +104,25 @@ public class CheatActivity extends AppCompatActivity {
         });
     }
 
+<<<<<<< HEAD
+=======
+    public static Intent newIntent(Context packageContext, boolean answerIsTrue) {
+        Intent i = new Intent(packageContext, CheatActivity.class);
+        i.putExtra(EXTRA_ANSWER_IS_TRUE, answerIsTrue);
+        return i;
+    }
+
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     private void setAnswerShownResult(boolean isAnswerShown) {
         Intent data = new Intent();
         data.putExtra(EXTRA_ANSWER_SHOWN, isAnswerShown);
         setResult(RESULT_OK, data);
     }
+<<<<<<< HEAD
+=======
+
+    public static boolean wasAnswerShown(Intent result) {
+        return result.getBooleanExtra(EXTRA_ANSWER_SHOWN, false);
+    }
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 }

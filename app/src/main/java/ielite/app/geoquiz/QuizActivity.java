@@ -1,13 +1,36 @@
 package ielite.app.geoquiz;
 
+<<<<<<< HEAD
 import android.app.Activity;
 import android.content.Intent;
+=======
+<<<<<<< HEAD
+import android.app.Activity;
+import android.content.Intent;
+=======
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+<<<<<<< HEAD
+import android.util.Log;
+=======
+<<<<<<< HEAD
+import android.util.Log;
+=======
+<<<<<<< HEAD
+import android.util.Log;
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,15 +40,42 @@ import android.widget.Toast;
 
 public class QuizActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     private static final String TAG = "QuizActivity";
     private static final String KEY_INDEX = "index";
     private static final int REQUEST_CODE_CHEAT = 0;
 
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+    private static final String TAG = "QuizActivity";
+    private static final String KEY_INDEX = "index";
+
+=======
+<<<<<<< HEAD
+    private static final String TAG = "QuizActivity";
+
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     private Button mTrueButton;
     private Button mFalseButton;
     private Button mNextButton;
     private Button mPrevButton;
+<<<<<<< HEAD
     private Button mCheatButton;
+=======
+<<<<<<< HEAD
+    private Button mCheatButton;
+=======
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     private TextView mQuestionTextView;
 
     private Question[] mQuestionBank = new Question[]{
@@ -38,21 +88,58 @@ public class QuizActivity extends AppCompatActivity {
     };
 
     private int mCurrentIndex = 0;
+<<<<<<< HEAD
     private boolean mIsCheater;
+=======
+<<<<<<< HEAD
+    private boolean mIsCheater;
+=======
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         Log.d(TAG, "onCreate(Bundle) called");
+=======
+<<<<<<< HEAD
+        Log.d(TAG, "onCreate(Bundle) called");
+=======
+<<<<<<< HEAD
+        Log.d(TAG, "onCreate(Bundle) called");
+=======
+<<<<<<< HEAD
+        Log.d(TAG, "onCreate(Bundle) called");
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
         setContentView(R.layout.activity_quiz);
 
         //get a reference to the text view and set its text to the question
         //at the current index
         mQuestionTextView = (TextView)findViewById(R.id.question_text_view);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 
         if(savedInstanceState != null){
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX,0);
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
         updateQuestion();
 
         //Getting references to Button Widgets
@@ -60,7 +147,14 @@ public class QuizActivity extends AppCompatActivity {
         mFalseButton = (Button)findViewById(R.id.false_button);
         mNextButton = (Button)findViewById(R.id.next_button);
         mPrevButton = (Button)findViewById(R.id.prev_button);
+<<<<<<< HEAD
         mCheatButton = (Button)findViewById(R.id.cheat_button);
+=======
+<<<<<<< HEAD
+        mCheatButton = (Button)findViewById(R.id.cheat_button);
+=======
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 
         //Set listeners for Buttons
         mTrueButton.setOnClickListener(new View.OnClickListener(){
@@ -81,7 +175,14 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+<<<<<<< HEAD
                 mIsCheater = false;
+=======
+<<<<<<< HEAD
+                mIsCheater = false;
+=======
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
                 updateQuestion();
             }
         });
@@ -97,6 +198,10 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
         mCheatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,6 +215,11 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -125,6 +235,10 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     @Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         if (resultCode != Activity.RESULT_OK){
             return;
@@ -139,6 +253,12 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     @Override
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     public void onSaveInstanceState(Bundle savedInstanceState){
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "onSaveInstanceState");
@@ -147,6 +267,15 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     @Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     public void onStart(){
         super.onStart();
         Log.d(TAG, "OnStart() Called");
@@ -175,6 +304,17 @@ public class QuizActivity extends AppCompatActivity {
 
 
     @Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4df0bf10e2dd35da0569d85107267c3468de8098
+>>>>>>> e85612616f53dd9acf03287199c59c96ab5aa7e7
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_quiz, menu);
@@ -206,6 +346,10 @@ public class QuizActivity extends AppCompatActivity {
     private void checkAnswer(boolean userPressedTrue){
         boolean answerIsTrue =  mQuestionBank[mCurrentIndex].isAnswerTrue();
         int messageResId = 0;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
         if (mIsCheater){
             messageResId = R.string.judgement_toast;
         }else {
@@ -214,6 +358,15 @@ public class QuizActivity extends AppCompatActivity {
             } else {
                 messageResId = R.string.incorrect_toast;
             }
+<<<<<<< HEAD
+=======
+=======
+        if(userPressedTrue == answerIsTrue){
+            messageResId = R.string.correct_toast;
+        }else {
+            messageResId = R.string.incorrect_toast;
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
         }
 
         Toast.makeText(this,messageResId,Toast.LENGTH_SHORT).show();

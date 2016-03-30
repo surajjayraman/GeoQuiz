@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <manifest package="ielite.app.geoquiz"
           xmlns:android="http://schemas.android.com/apk/res/android">
+=======
+<<<<<<< HEAD
+<manifest package="ielite.app.geoquiz"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ielite.app.geoquiz" >
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
         android:theme="@style/AppTheme">
         <activity
             android:name=".QuizActivity"
@@ -23,6 +37,22 @@
             android:label="@string/title_activity_cheat"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+<<<<<<< HEAD
+=======
+=======
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".QuizActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     </application>
 
 </manifest>

@@ -7,14 +7,32 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+<<<<<<< HEAD
+=======
+=======
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+>>>>>>> 41f94498dd72466f665551ebc62879d1effcdee8
+>>>>>>> 05f33654f37ce8a7ea27bed1aeb395235a23ee06
 
 </resources>
